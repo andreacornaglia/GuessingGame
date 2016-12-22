@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Guessing game</title>
+    <meta name="description" content="A game that takes a user guess and evaluates if it's cold/hot in relation to the number to be guessed.">
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- add bootstrap -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.js"></script>
+    <script src="https://use.fontawesome.com/6d415e4c19.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Source+Sans+Pro:400,600" rel="stylesheet">
+  </head>
+  <body>
+  <div class="site-wrapper">
+    <div class="site-wrapper-inner">
+      <div class="cover-container">
+        <div class="inner cover">
+          <h1 class="cover-heading">The Guessing Game</h1>
+          <p class="lead">Guess a number between 1-100!</p>
+          <!--cool input field -->
+          <fieldset>
+            <form action="">
+              <input type="text" class="ghost-input" placeholder="Your guess" required> 
+              <input type="submit" class="ghost-button">
+            </form>
+          </fieldset>
+          <!-- end cool input field -->
+          <button type="button" class="btn btn-round" aria-label="Reset">
+            <i class="fa fa-refresh" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="btn btn-round" aria-label="Reset">
+            <i class="fa fa-question" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="past">
+          <p>Previous guesses:</p>
+          <ul class="previousGuesses">
+            <li>num1</li>
+            <li>num2</li>
+            <li>num3</li>
+            <li>num4</li>
+            <li>num5</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+  </body>
+</html>
