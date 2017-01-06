@@ -7,12 +7,15 @@
     <meta name="description" content="A game that takes a user guess and evaluates if it's cold/hot in relation to the number to be guessed.">
     <!-- responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- add bootstrap -->
     <link rel="stylesheet" href="bootstrap.css">
     <script src="bootstrap.js"></script>
-    <script src="https://use.fontawesome.com/6d415e4c19.js"></script>
+    <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <!-- fonts -->
+    <script src="https://use.fontawesome.com/6d415e4c19.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bitter|Source+Sans+Pro:400,600" rel="stylesheet">
   </head>
   <body>
@@ -24,27 +27,25 @@
           <p class="lead">Guess a number between 1-100!</p>
           <!--cool input field -->
           <fieldset>
-            <form action="">
-              <input type="text" class="ghost-input" placeholder="Your guess" required> 
-              <input type="submit" class="ghost-button">
-            </form>
+              <input id="userInput"  type="text" class="ghost-input" placeholder="Your guess" required> 
+              <input id="submitBtn" type="submit" class="ghost-button">
           </fieldset>
           <!-- end cool input field -->
-          <button type="button" class="btn btn-round" aria-label="Reset">
+          <button id="refresh" type="button" class="btn btn-round" aria-label="Reset">
             <i class="fa fa-refresh" aria-hidden="true"></i>
           </button>
-          <button type="button" class="btn btn-round" aria-label="Reset">
+          <button id="hint" type="button" class="btn btn-round" aria-label="Reset">
             <i class="fa fa-question" aria-hidden="true"></i>
           </button>
         </div>
         <div class="past">
           <p>Previous guesses:</p>
           <ul class="previousGuesses">
-            <li>num1</li>
-            <li>num2</li>
-            <li>num3</li>
-            <li>num4</li>
-            <li>num5</li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
           </ul>
         </div>
         <div class="mastfoot">
@@ -58,5 +59,6 @@
     </div>
 
     </div>
+  <script src="GuessingGame.js"></script>  
   </body>
 </html>
